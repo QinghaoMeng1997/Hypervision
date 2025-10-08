@@ -82,6 +82,9 @@ python test.py
 
 The measurements collected using Hypervision microsystem from the folder  `'./Input_Img/' `  . And output reconstructed images  will be saved in  `'./Output_Img/' `  .
 
+## 🖼 Reproduction instructions
+- Complete the steps in Quick Start one by one, and the project results can be reproduced.
+  
 ## 📬 Contact
 For questions, please contact:
 m15890095196@163.com
