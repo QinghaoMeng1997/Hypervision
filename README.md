@@ -46,7 +46,7 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 
 ### 3.1 D2BA test on FPGA
 - Compile the operator into an IP core using HLS, complete the layout and routing in Vivado, and finally perform heterogeneous verification on Vitis.
-- 
+  
 ### 3.2 Lite-SRNet program and data description
 
 - The model of reconstruction:  `./architecture/SRNet_Small.py` 
