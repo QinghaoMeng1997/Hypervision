@@ -36,13 +36,18 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 - HyperspecI sensor (Nature, 635: 8037, 73-81, 2024), AXU15EG and HyperN computing chip.
 
 ## 2. Installation guide
+
 ### 2.1 Instructions
 - The code for HLS operator, training and testing can be downloaded at public repository ：https://github.com/QinghaoMeng1997/Hypervision. 
 - Due to the massive amount of training dataset, we have packaged it into multiple repositories for storage: https://github.com/bianlab/Hyperspectral-imaging-datase. 
 - The mask data file is quite large. Please contact m15890095196@163.com for it.
 
 ## 3. Program description and testing
-### 3.1 Main program and data description
+
+### 3.1 D2BA test on FPGA
+- Compile the operator into an IP core using HLS, complete the layout and routing in Vivado, and finally perform heterogeneous verification on Vitis.
+- 
+### 3.2 Lite-SRNet program and data description
 
 - The model of reconstruction:  `./architecture/SRNet_Small.py` 
 
@@ -50,7 +55,32 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 
 - Calibrated sensing matrix of Hypervision:   `./MASK/` 
 
-- The test and training program :    `train.py` , `test.py` 
+- The test and training program :    `train.py` , `test.py`
+- 
+### 3.3 Model Training of Lite-SRNet
+
+Run the train program on the collected measurements to reconstruct hyperspectral images in pytorch platform.
+
+Download the training dataset of Hypervision into ` ./Data_Train/`. 
+
+The training programs are executed to train the spectral reconstruction model. 
+
+For training Hypervision,  execute the following command in the terminal, and the training results will be saved in the ` ./exp/` folder.
+
+```python
+python train.py 
+```
+### 3.4 Test Hypervision hyperspectral reconstruction results in real-world scenes
+
+Run the test program on the collected images to reconstruct hyperspectral images in pytorch platform.
+
+When the images were collected using our Hypervision microsystem,  the data can be reconstructed by run the following program in the terminal.
+
+```python
+python test.py
+```
+
+The measurements collected using Hypervision microsystem from the folder  `'./Input_Img/' `  . And output reconstructed images  will be saved in  `'./Output_Img/' `  .
 
 ## 📬 Contact
 For questions, please contact:
