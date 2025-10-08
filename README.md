@@ -56,7 +56,7 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 - Calibrated sensing matrix of Hypervision:   `./MASK/` 
 
 - The test and training program :    `train.py` , `test.py`
-- 
+  
 ### 3.3 Model Training of Lite-SRNet
 
 Run the train program on the collected measurements to reconstruct hyperspectral images in pytorch platform.
