@@ -4,20 +4,21 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 
 ## 📁 Project Structure
 
-##### Hypervision/ 
-
-  ├── D2BA_HLS/              - The D2BA underlying core operator HLS code  
-  ├── D2BA_TB/               - The D2BA underlying core operator test bentch code  
-  ├── D2BA_Test/             - The D2BA hardware accelerator Vitis integration test code      
-  ├── Data_Train/            - The Lite-SRNet hyperspectral reconstruction network training dataset  
-  ├── Input_Img/             - The Lite-SRNet hyperspectral reconstruction network tests input images   
-  ├── Save_Img/              - The Lite-SRNet hyperspectral reconstruction network tests output image   
-  ├── architecture/          - The Lite-SRNet hyperspectral reconstruction network architecture   
-  ├── exp/                   - Training results of Lite-SRNet   
-  ├── getdataset             - The Lite-SRNet training dataset generates code   
-  ├── getdataset_c           - The Lite-SRNet training dataset generates code with reflectance parameters  
-  ├── test_lite_srnet        - The Lite-SRNet test code   
-  ├── train                  - The Lite-SRNet training code 
+#### Hypervision/ 
+|  File   | Description  |
+|  :----:  | :---- |
+| D2BA_HLS/ |The D2BA underlying core operator HLS code|
+| D2BA_TB/  |The D2BA underlying core operator test bentch code|
+| D2BA_Test/|The D2BA hardware accelerator Vitis integration test code|
+| Data_Train|The Lite-SRNet hyperspectral reconstruction network training dataset|
+| Input_Img/|The Lite-SRNet hyperspectral reconstruction network tests input images|
+| Save_Img/ |The Lite-SRNet hyperspectral reconstruction network tests output image|
+| architecture/|The Lite-SRNet hyperspectral reconstruction network architecture|
+| exp/|Training results of Lite-SRNet|
+| getdataset|The Lite-SRNet training dataset generates code|
+| getdataset_c|The Lite-SRNet training dataset generates code with reflectance parameters|
+| test_lite_srnet|The Lite-SRNet test code|
+| train|The Lite-SRNet training code| 
   
 ## 🚀 Quick Start
 ## 1. System requirements
@@ -59,33 +60,33 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
   
 ### 3.3 Model Training of Lite-SRNet
 
-Run the train program on the collected measurements to reconstruct hyperspectral images in pytorch platform.
+- Run the train program on the collected measurements to reconstruct hyperspectral images in pytorch platform.
 
-Download the training dataset of Hypervision into ` ./Data_Train/`. 
+- Download the training dataset of Hypervision into ` ./Data_Train/`. 
 
-The training programs are executed to train the spectral reconstruction model. 
+- The training programs are executed to train the spectral reconstruction model. 
 
-For training Hypervision,  execute the following command in the terminal, and the training results will be saved in the ` ./exp/` folder.
+- For training Hypervision,  execute the following command in the terminal, and the training results will be saved in the ` ./exp/` folder.
 
 ```python
 python train.py 
 ```
 ### 3.4 Test Hypervision hyperspectral reconstruction results in real-world scenes
 
-Run the test program on the collected images to reconstruct hyperspectral images in pytorch platform.
+- Run the test program on the collected images to reconstruct hyperspectral images in pytorch platform.
 
-When the images were collected using our Hypervision microsystem,  the data can be reconstructed by run the following program in the terminal.
+- When the images were collected using our Hypervision microsystem,  the data can be reconstructed by run the following program in the terminal.
 
 ```python
 python test.py
 ```
 
-The measurements collected using Hypervision microsystem from the folder  `'./Input_Img/' `  . And output reconstructed images  will be saved in  `'./Output_Img/' `  .
+- The measurements collected using Hypervision microsystem from the folder  `'./Input_Img/' `  . And output reconstructed images  will be saved in  `'./Output_Img/' `  .
 
 ## 🖼 Reproduction instructions
 - Complete the steps in Quick Start one by one, and the project results can be reproduced.
   
 ## 📬 Contact
-For questions, please contact:
+- For questions, please contact:
 m15890095196@163.com
-Or open an issue on this GitHub repository.
+or open an issue on this GitHub repository.
