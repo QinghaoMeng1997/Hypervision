@@ -37,8 +37,9 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 
 ## 2. Installation guide
 
-- The code for HLS operator, training and testing can be downloaded at public repository ：https://github.com/QinghaoMeng1997/Hypervision  
-- Due to the massive amount of training dataset, we have packaged it into multiple repositories for storage: https://github.com/bianlab/Hyperspectral-imaging-datase 
+- The code for HLS operator, training and testing can be downloaded at public repository ：https://github.com/QinghaoMeng1997/Hypervision. 
+- Due to the massive amount of training dataset, we have packaged it into multiple repositories for storage: https://github.com/bianlab/Hyperspectral-imaging-datase. 
+- The mask data file is quite large. Please contact m15890095196@163.com for it.
 
 ## 📬 Contact
 For questions, please contact:
