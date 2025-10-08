@@ -36,10 +36,21 @@ Liheng Bian\*, Qinghao Meng\*, Lianjie Li, Xuan Peng, Zhen Wang, Jiajun Zhao, Zh
 - HyperspecI sensor (Nature, 635: 8037, 73-81, 2024), AXU15EG and HyperN computing chip.
 
 ## 2. Installation guide
-
+### 2.1 Instructions
 - The code for HLS operator, training and testing can be downloaded at public repository ：https://github.com/QinghaoMeng1997/Hypervision. 
 - Due to the massive amount of training dataset, we have packaged it into multiple repositories for storage: https://github.com/bianlab/Hyperspectral-imaging-datase. 
 - The mask data file is quite large. Please contact m15890095196@163.com for it.
+
+## 3. Program description and testing
+### 3.1 Main program and data description
+
+- The model of reconstruction:  `./architecture/SRNet_Small.py` 
+
+- Pre-trained weights of Lite-SRNet for Hypervision:   `./exp/net_1000epoch.pth` 
+
+- Calibrated sensing matrix of Hypervision:   `./MASK/` 
+
+- The test and training program :    `train.py` , `test.py` 
 
 ## 📬 Contact
 For questions, please contact:
